@@ -27,8 +27,10 @@ a:hover {
 
 .hobbyText {
     text-align: center;
+    font-size: 1.3rem;
 }
 
+/* 사이드바 크기조절 */
 @media (min-width: 1200px) {
     .col-xl-3{
         max-width:20%;
@@ -48,4 +50,26 @@ a:hover {
 
 .sidebar {
     padding: 10px 10px;
+}
+
+/* 이미지 마진조절 */
+.img-fluid {
+    margin:auto;
+}
+/* 
+.slick-slide52 {
+    margin: auto;
+} */
+
+/* 비디오 전체화면 버튼 없애버리기, 크롬에서만 적용됨, 전체화면 크기조절등은 javascript를 활용하면 가능, 참고: https://stackoverflow.com/questions/17678302/how-to-hide-full-screen-button-of-the-video-tag-in-html5 */
+video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
